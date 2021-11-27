@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  /* Primary */
+  --cyan: hsl(179, 62%, 43%);
+  --bright_yellow: hsl(71, 73%, 54%);
+
+  /* Neutral */
+  --light_gray: hsl(204, 43%, 93%);
+  --grayish_blue: hsl(218, 22%, 67%);
+
+  /* Fonts */
+  --ff-karla: 'Karla', sans-serif;
+  --fz: 16px;
+}
+
+body {
+  font-family: var(--ff-karla);
+  font-size: var(--fz);
+  background-color: var(--light_gray);
+}
+
+.container-main {
+  padding: 72px 32px 76px 32px; 
+  /* background-color: bisque; */
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.component__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.componenet__title {
+  font-size: 21px;
+  color: var(--cyan);
+}
+
+.componenet__subtitle {
+  color: var(--bright_yellow);
+  font-size: 15px;
+}
+
+.component__text {
+ color: var(--grayish_blue);
+ font-size: 14px;
+}
+
+.component__description {
+  padding: 24px;
+}
+
+.subscription {
+  color: var(--light_gray);
+  font-size: 17px;
+}
+
+
+.component__subscription {
+  background-color: var(--cyan);
+  color: var(--light_gray);
+  padding: 24px;
+  /* background-color: #4abebd; */
+  /* background-color: var(--grayish_blue); */
+  /* background-color: #2bb3b1; */
+}
+
+.signup-link {
+  text-decoration: none;
+  margin: auto;
+  display: inline-block;
+  padding: 1em 0;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--bright_yellow);
+  color: var(--light_gray);
+}
+
+.price {
+  color: var(--light_gray);
+}
+
+.price span {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.component__detail {
+  /* background-color: var(--grayish_blue); */
+  background-color: #4abebd;
+  padding: 24px;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* background-color: var(--cyan); */
+}
+
+.detail-title {
+  margin-bottom: 13px;
+}
+
+.component__detail p {
+  font-size: 13px;
+  color: var(--light_gray);
+  padding-right: 4.5em;
+}
+
+@media (min-width: 576px) {
+
+  .component__body {
+    flex-direction: row;
+  }
+
+  .component__detail {
+    width: 50%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 5px;
+  }
+
+  .component__subscription {
+    width: 50%;
+    border-bottom-left-radius: 5px;
+  }
+
+}
