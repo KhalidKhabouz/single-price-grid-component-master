@@ -29,7 +29,7 @@ body {
 }
 
 .container-main {
-  padding: 72px 32px 76px 32px; 
+  padding: 4.5rem 2rem 4.75rem 2rem; 
   /* background-color: bisque; */
 }
 
@@ -46,29 +46,34 @@ body {
 }
 
 .componenet__title {
-  font-size: 21px;
+  font-size: 1.25rem;
   color: var(--cyan);
+  margin-bottom: 1.875rem;
 }
 
 .componenet__subtitle {
   color: var(--bright_yellow);
-  font-size: 15px;
+  font-size: .9rem;
+  margin-bottom: 1.5rem;
 }
 
 .component__text {
  color: var(--grayish_blue);
- font-size: 14px;
+ font-size: 0.875rem;
+ line-height: 1.7;
+ margin-bottom: 2.25rem;
 }
 
 .component__description {
-  padding: 24px;
+  padding: 1.5rem;
+  padding-bottom: 0;
 }
 
 .subscription {
-  color: var(--light_gray);
-  font-size: 17px;
-}
+  color: white;
+  font-size: 1rem;
 
+}
 
 .component__subscription {
   background-color: var(--cyan);
@@ -77,6 +82,10 @@ body {
   /* background-color: #4abebd; */
   /* background-color: var(--grayish_blue); */
   /* background-color: #2bb3b1; */
+}
+
+.access-price {
+  margin-bottom: 1.875rem;
 }
 
 .signup-link {
@@ -89,11 +98,12 @@ body {
   text-align: center;
   background-color: var(--bright_yellow);
   color: var(--light_gray);
-  box-shadow: 5px 5px 5px 5px #888888;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
 }
 
 .price {
-  color: var(--light_gray);
+  color: white;
+  margin-bottom: .6rem;
 }
 
 .price span {
@@ -116,9 +126,10 @@ body {
 }
 
 .component__detail p {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: var(--light_gray);
   padding-right: 4.5em;
+  line-height: 1.5;
 }
 
 @media (min-width: 576px) {
