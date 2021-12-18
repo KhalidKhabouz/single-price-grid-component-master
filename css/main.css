@@ -19,7 +19,7 @@
 
   /* Fonts */
   --ff-karla: 'Karla', sans-serif;
-  --fz: 16px;
+  --fz: 1rem;
 }
 
 body {
@@ -58,11 +58,11 @@ body {
 }
 
 .component__text {
- color: var(--grayish_blue);
- font-size: 0.875rem;
- line-height: 1.7;
- margin-bottom: 2.25rem;
-}
+  color: var(--grayish_blue);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  margin-bottom: 2.25rem;
+ }
 
 .component__description {
   padding: 1.5rem;
@@ -71,14 +71,16 @@ body {
 
 .subscription {
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 
 }
 
 .component__subscription {
   background-color: var(--cyan);
   color: var(--light_gray);
-  padding: 24px;
+  padding: 1.5rem;
 }
 
 .access-price {
@@ -98,37 +100,48 @@ body {
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
 }
 
-.price {
+.price-content {
   color: white;
   margin-bottom: .6rem;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
 }
 
-.price span {
-  font-size: 28px;
+.price {
+  font-size: 1.875rem;
   font-weight: 700;
+}
+
+.price-content span:nth-child(2){
+  color: var(--light_gray)
 }
 
 .component__detail {
   background-color: #4abebd;
-  padding: 24px;
+  padding: 1.5rem;
   color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .detail-title {
-  margin-bottom: 13px;
+  margin-bottom: 0.8125rem;
 }
 
-.component__detail p {
-  font-size: 0.8125rem;
+.component__detail ul {
+  list-style: none;
+}
+
+.component__detail li {
+  font-size: 0.875rem;
+  font-size: 0.875rem;
   color: var(--light_gray);
-  padding-right: 4.5em;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 
@@ -136,7 +149,7 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 576px) {
+@media (min-width: 36rem) {
 
   .container-main {
     padding: 0;
@@ -155,10 +168,25 @@ body {
     width: 50%;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 5px;
+    padding: 2.5rem;
   }
 
   .component__subscription {
     width: 50%;
     border-bottom-left-radius: 5px;
+    padding: 2.5rem;
+  }
+
+  .component__text {
+    font-size: 1rem;
+   }
+
+  .component__description {
+    padding: 2.5rem;
+    padding-bottom: 0;
+  }
+
+  .componenet__subtitle {
+    font-size: 1.12rem;
   }
 }
