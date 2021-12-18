@@ -134,6 +134,15 @@ body {
 
 @media (min-width: 576px) {
 
+  .container-main {
+    padding: 0;
+  }
+
+  .component {
+    width: 39.6875rem;
+    margin: 10.1875rem auto;
+  }
+
   .component__body {
     flex-direction: row;
   }
