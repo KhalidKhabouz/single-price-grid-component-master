@@ -30,7 +30,6 @@ body {
 
 .container-main {
   padding: 4.5rem 2rem 4.75rem 2rem; 
-  /* background-color: bisque; */
 }
 
 .component {
@@ -80,9 +79,6 @@ body {
   background-color: var(--cyan);
   color: var(--light_gray);
   padding: 24px;
-  /* background-color: #4abebd; */
-  /* background-color: var(--grayish_blue); */
-  /* background-color: #2bb3b1; */
 }
 
 .access-price {
@@ -113,13 +109,11 @@ body {
 }
 
 .component__detail {
-  /* background-color: var(--grayish_blue); */
   background-color: #4abebd;
   padding: 24px;
   color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  /* background-color: var(--cyan); */
 }
 
 .detail-title {
@@ -167,5 +161,4 @@ body {
     width: 50%;
     border-bottom-left-radius: 5px;
   }
-
 }
