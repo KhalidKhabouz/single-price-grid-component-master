@@ -164,6 +164,12 @@ body {
     flex-direction: row;
   }
 
+  .componenet__title {
+    font-size: 1.5rem;
+    color: var(--cyan);
+    margin-bottom: 1.875rem;
+  }
+
   .component__detail {
     width: 50%;
     border-bottom-left-radius: 0;
@@ -188,5 +194,6 @@ body {
 
   .componenet__subtitle {
     font-size: 1.12rem;
+    margin-bottom: .5rem;
   }
 }
